@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grok Bot safety settings, in plain English | Agent House Rules</title>
+<meta name="description" content="The Grok Bot settings that matter most for new users: approvals, Auto-review rules, local computer access, spending caps, and plugins.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="../index.html">Agent House Rules</a>
+  <nav><a href="../guides/index.html">Guides</a><a href="../about.html">About</a></nav>
+</header>
+<main id="main" tabindex="-1">
+<p class="small"><a href="index.html">Guides</a></p>
+<h1>Grok Bot safety settings, in plain English</h1>
+<p class="lead">Grok Bot's help pages live on cursor.com and docs.x.ai. Here are the settings a new user should know, with links.</p>
+<p class="small">The docs say settings "depend on your account and rollout," so you may not see every one. <a href="https://cursor.com/docs/grok-bot/settings" rel="noopener">Source</a>.</p>
+
+<h2>1. Approval cards</h2>
+<p>When a Bot wants to do something that needs your OK, you see a card. <strong>Allow once</strong> lets it go ahead one time. <strong>Always allow</strong> can save a rule for next time. <strong>Deny</strong> blocks it. <span class="tag">Checked</span></p>
+<p>The onboarding page says to use Allow once while you learn, and Deny when it's not what you asked for. <a href="https://cursor.com/help/grok-bot/onboarding" rel="noopener">Source</a>. The security page adds: nobody should approve an action "whose target or effect they can't identify." <a href="https://cursor.com/docs/grok-bot/security" rel="noopener">Source</a>.</p>
+
+<h2>2. Your own "Ask first" rules</h2>
+<p>Go to <strong>Settings &gt; General &gt; Auto-review</strong> and add rules. <strong>Ask first</strong> rules always stop matching actions for you. Keep them narrow, like "ask first before sending any external email." Avoid broad rules like "allow everything in the browser." <span class="tag">Checked</span> <a href="https://cursor.com/docs/grok-bot/security" rel="noopener">Source</a>.</p>
+<p>Two catches from the docs: these rules are saved on the current computer, so a second computer needs its own. And Auto-review doesn't check everything, like memory writes and most settings changes. <span class="tag">Checked</span></p>
+
+<h2>3. Your own computer</h2>
+<p>Bots work on their own cloud computer. They can run commands on <em>your</em> computer only if you allow it. The setting is <strong>Settings &gt; Computer &gt; Execution on this computer</strong>. The docs recommend <strong>Never</strong> unless a Bot has a specific reason to work on your files. <span class="tag">Checked</span> <a href="https://cursor.com/docs/grok-bot/security" rel="noopener">Source</a>.</p>
+
+<h2>4. Surprise charges</h2>
+<p>When weekly usage runs out, on-demand usage can cost money. To cap it, open <strong>Settings &gt; On-demand monthly limit</strong> in Grok Bot, or go to cursor.com/dashboard &gt; Spending &gt; Monthly Limit. The FAQ says a running task "can go a little past" the cap. <span class="tag">Checked</span> <a href="https://cursor.com/help/grok-bot/faqs" rel="noopener">Source</a>.</p>
+
+<h2>5. Plugins</h2>
+<p>Plugins connect Bots to things like Gmail and Slack. An installed plugin is available to every Bot you run. So only install what you need. <span class="tag">Checked</span> <a href="https://cursor.com/docs/grok-bot/work" rel="noopener">Source</a>.</p>
+
+<h2>6. Passwords</h2>
+<p>Keep passwords and codes out of chat. Use the secure prompt when a Bot asks for a login. For sign-ins, the Bot hands you the computer and doesn't see your password. <span class="tag">Checked</span> <a href="https://cursor.com/help/grok-bot/onboarding" rel="noopener">Source</a>.</p>
+
+<h2>7. Put rules in the Bot's Description</h2>
+<p>Lasting rules go in each Bot's <strong>Description</strong> (called <strong>Instructions</strong> on the phone). The docs say to put safety limits there "rather than in memory." <span class="tag">Checked</span> <a href="https://cursor.com/help/grok-bot/edit-bot" rel="noopener">How to edit it</a>. <a href="where-to-paste-house-rules.html">Our step-by-step</a>.</p>
+
+<h2>Privacy and training</h2>
+<p>xAI's docs say Grok Bot uses your Cursor account's privacy settings, and training opt-out follows those settings. <a href="https://docs.x.ai/grok-bot/approvals-security-and-privacy" rel="noopener">Source</a>. We did not confirm the exact toggle name. <span class="tag no">Not checked</span></p>
+<div class="stack" style="margin-top:2.5rem">
+  <a class="btn big" href="../index.html">Make my house rules (3 minutes)</a>
+</div>
+</main>
+<footer class="bottom">
+  <p><strong>Not affiliated with Meta, xAI, or Cursor.</strong> Muse and Grok Bot are their owners' trademarks. This is an independent, free guide from Orbit Desk.</p>
+  <p>Helpful guidance only. Not a security guarantee, not legal advice. <a href="../about.html">About and privacy</a>: everything stays on your device.</p>
+</footer>
+</body>
+</html>
