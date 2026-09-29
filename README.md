@@ -4,6 +4,9 @@ Answer 10 questions. Get a set of safety rules to paste into your AI agent.
 
 **Live:** https://agent-house-rules.pages.dev
 
+Also on [Honeypot](https://honeypot-e6c.pages.dev) — a free, open index of skills for AI agents.
+[![Indexed on Honeypot](https://honeypot-e6c.pages.dev/badge.svg)](https://honeypot-e6c.pages.dev)
+
 AI agents like Muse and Grok Bot can send messages, buy things, and book stuff for you. They follow instructions — so give them good ones. House Rules asks 10 plain questions (can your agent spend money? share your address? message strangers?) and hands you a short list of rules to copy and paste into your agent, plus a checklist of the app's own safety settings to change.
 
 About 3 minutes. Free. Everything stays on your device — no sign-up, no tracking, no network calls.
