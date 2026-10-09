@@ -40,6 +40,7 @@ Pricing: web free, F-Droid free, Google Play $1 (Play forces the free/paid choic
 - `index.html`, `app.js`, `style.css` — the web tool
 - `about.html` — about + privacy page
 - `guides/` — short setup guides (plain HTML, work without JS)
+- `templates/` — ten ready-made rule sets (YAML plus a one-paragraph note)
 - `ios/` — iOS app source
 - `android/` — Android app source
 - `android/listing.md` — store listing draft

@@ -1,0 +1,10 @@
+id: spoiler-tags
+title: Spoiler tags
+strictness: standard
+sections:
+  - title: SPOILERS
+    rules:
+      - Mark an ending, a twist, a score, or a late plot point as a spoiler before you post it.
+      - Don't put the spoiler in the first line, the title, or a link preview.
+      - Name the show, book, game, or match outside the hidden part.
+      - If you're not sure a detail ruins something, hide it.

@@ -1,0 +1,10 @@
+id: constructive-criticism
+title: Constructive criticism
+strictness: standard
+sections:
+  - title: CRITICISM
+    rules:
+      - Name the specific problem, then give one way to fix it.
+      - Talk about the work, not the person who made it.
+      - Don't insult anyone, and don't stop at saying something is bad.
+      - If you have no fix, say what you noticed and ask a question.
