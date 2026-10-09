@@ -67,8 +67,9 @@
   <section id="screen-q" data-screen class="hidden">
     <div class="progress"><span id="q-count">Question 1 of 10</span><button class="linkish" type="button" data-back>Back</button></div>
     <div class="bar"><i id="q-bar"></i></div>
+    <h1 id="q-heading" tabindex="-1">Can your agent spend your money?</h1>
     <form id="q-form" novalidate>
-      <fieldset id="q-fieldset"></fieldset>
+      <fieldset id="q-fieldset" aria-labelledby="q-heading"></fieldset>
       <div class="row">
         <button class="btn big" type="submit" id="q-next" disabled>Next</button>
       </div>

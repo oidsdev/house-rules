@@ -18,6 +18,7 @@ No sign-up. No tracking. No cookies. No analytics. Everything stays on your devi
   where-to-tap steps checked against each company's own help pages.
 - **Test prompts.** A 1-minute test to see whether your agent respects the rules.
 - **Guides.** Where to paste rules, per-agent setup (Muse, Grok Bot, others):
+  - https://agent-house-rules.pages.dev/guides/
   - https://agent-house-rules.pages.dev/guides/where-to-paste-house-rules.html
   - https://agent-house-rules.pages.dev/guides/muse-ask-before-spending.html
   - https://agent-house-rules.pages.dev/guides/muse-privacy-settings.html
