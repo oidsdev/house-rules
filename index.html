@@ -5,20 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agent House Rules: simple safety rules for Muse and Grok Bot</title>
 <meta name="description" content="A free, 3-minute tool. Answer 10 easy questions and get plain-English house rules to paste into Muse, Grok Bot, or another AI agent. Nothing leaves your device.">
+<link rel="canonical" href="https://agent-house-rules.pages.dev/">
+<meta property="og:title" content="Agent House Rules: simple safety rules for Muse and Grok Bot">
+<meta property="og:description" content="A free, 3-minute tool. Answer 10 easy questions and get plain-English house rules to paste into Muse, Grok Bot, or another AI agent. Nothing leaves your device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agent-house-rules.pages.dev/">
+<meta property="og:site_name" content="Agent House Rules">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Agent House Rules: simple safety rules for Muse and Grok Bot">
+<meta name="twitter:description" content="A free, 3-minute tool. Answer 10 easy questions and get plain-English house rules to paste into Muse, Grok Bot, or another AI agent. Nothing leaves your device.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Agent House Rules",
-  "url": "https://agent-house-rules.pages.dev",
-  "description": "A free, 3-minute tool. Answer 10 easy questions and get plain-English house rules to paste into Muse, Grok Bot, or another AI agent. Nothing leaves your device.",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any (web browser)",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "isAccessibleForFree": true,
-  "author": { "@type": "Organization", "name": "Orbital Desk LLC", "url": "https://ignitionfoundry.com" }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://agent-house-rules.pages.dev/#website",
+      "name": "Agent House Rules",
+      "url": "https://agent-house-rules.pages.dev/",
+      "description": "A free, 3-minute tool. Answer 10 easy questions and get plain-English house rules to paste into Muse, Grok Bot, or another AI agent. Nothing leaves your device.",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://agent-house-rules.pages.dev/#publisher" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://agent-house-rules.pages.dev/#publisher",
+      "name": "Orbital Desk LLC",
+      "alternateName": "Orbit Desk",
+      "url": "https://ignitionfoundry.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Agent House Rules",
+      "url": "https://agent-house-rules.pages.dev/",
+      "description": "A free, 3-minute tool. Answer 10 easy questions and get plain-English house rules to paste into Muse, Grok Bot, or another AI agent. Nothing leaves your device.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "isAccessibleForFree": true,
+      "author": { "@id": "https://agent-house-rules.pages.dev/#publisher" },
+      "publisher": { "@id": "https://agent-house-rules.pages.dev/#publisher" }
+    }
+  ]
 }
 </script>
 </head>
@@ -54,7 +85,7 @@
   <section id="screen-agent" data-screen class="hidden">
     <div class="progress"><span>Before the questions</span><button class="linkish" type="button" data-back>Back</button></div>
     <div class="bar"><i style="width:8%"></i></div>
-    <h1 tabindex="-1">Which agent do you use?</h1>
+    <h2 class="screen-title" tabindex="-1">Which agent do you use?</h2>
     <p class="hint">We'll show you where to paste your rules.</p>
     <div class="stack agent-grid">
       <button class="btn secondary" type="button" data-agent="muse">Muse<small>Meta's AI agent app</small></button>
@@ -79,7 +110,7 @@
   <section id="screen-result" data-screen class="hidden">
     <div class="progress"><span>Done</span><button class="linkish" type="button" data-back>Back</button></div>
     <div class="bar"><i style="width:100%"></i></div>
-    <h1 tabindex="-1">Your house rules</h1>
+    <h2 class="screen-title" tabindex="-1">Your house rules</h2>
     <p>Copy this. Then paste it where your agent keeps its standing instructions. Steps are below.</p>
     <pre class="rules" id="rules-out" aria-label="Your house rules"></pre>
     <button class="btn big" type="button" id="copy-btn">Copy my rules</button>
@@ -94,7 +125,7 @@
       Agents can skip or forget rules. Keep approvals on, read each request before you tap yes, and use the settings below. You are still the one in charge.
     </div>
 
-    <h2 id="paste-h">How to paste it</h2>
+    <h3 class="section-title" id="paste-h">How to paste it</h3>
     <div class="tabs" role="tablist" aria-label="Choose your agent">
       <button type="button" role="tab" data-tab="muse" aria-selected="false">Muse</button>
       <button type="button" role="tab" data-tab="grok" aria-selected="false">Grok Bot</button>
@@ -102,7 +133,7 @@
     </div>
     <div id="paste-out"></div>
 
-    <h2>Test it (1 minute)</h2>
+    <h3 class="section-title">Test it (1 minute)</h3>
     <p>After you paste, send your agent these, one at a time:</p>
     <ol class="steps">
       <li><strong>"House rules check."</strong> It should list your rules back in a few short lines.</li>
@@ -111,14 +142,14 @@
     </ol>
     <p class="small">If an answer is wrong, paste the rules again and tell it which rule it missed. Test again after big app updates.</p>
 
-    <h2 id="settings-h">Settings checklist</h2>
+    <h3 class="section-title" id="settings-h">Settings checklist</h3>
     <p class="small">
       <span class="tag">Checked</span> means we found it on the company's own help pages (link included).
       <span class="tag no">Not checked</span> means good advice we could not confirm for your app. Menus change, so names may differ.
     </p>
     <div id="settings-out"></div>
 
-    <h2>Short guides</h2>
+    <h3 class="section-title">Short guides</h3>
     <ul class="guide-list">
       <li><a href="guides/muse-ask-before-spending.html">How to make Muse ask before spending</a></li>
       <li><a href="guides/grok-bot-safety-settings.html">Grok Bot safety settings, in plain English</a></li>

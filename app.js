@@ -181,7 +181,7 @@
   function srcLink(s) { return '<p class="src">Source: <a href="' + s.url + '" rel="noopener">' + s.name + "</a></p>"; }
   var PASTE = {
     muse:
-      "<h3>Muse: paste into your Soul file</h3>" +
+      "<h4 class=\"subsection-title\">Muse: paste into your Soul file</h4>" +
       "<p>Meta's help page says Muse's <strong>Soul</strong> file holds \"who your Muse is, including core truths, boundaries, and personality.\" You can edit it yourself.</p>" +
       '<ol class="steps">' +
       "<li>Tap <strong>Copy my rules</strong> above.</li>" +
@@ -191,7 +191,7 @@
       "</ol>" + srcLink(SRC.museData) +
       '<p class="small"><span class="tag no">Not checked</span> Can\'t find it? You can paste the rules into chat and ask Muse to add them to its Soul file. Meta\'s page says asking Muse is the simplest way to manage what it stores, but it does not describe this exact request. Check the Soul file after.</p>',
     grok:
-      "<h3>Grok Bot: paste into the Bot's Description</h3>" +
+      "<h4 class=\"subsection-title\">Grok Bot: paste into the Bot's Description</h4>" +
       "<p>The official help page says a Bot's description \"is the Bot's job\" and is where lasting rules go, like \"Ask before sending any email.\"</p>" +
       "<p><strong>On a computer:</strong></p>" +
       '<ol class="steps">' +
@@ -205,7 +205,7 @@
       srcLink(SRC.gbEdit) +
       '<p class="small">The docs also say to put safety limits in the description \"rather than in memory.\" <a href="' + SRC.gbWork.url + '" rel="noopener">Source</a>. Only the Bot\'s owner can edit it.</p>',
     other:
-      "<h3>Other agents: look for standing instructions</h3>" +
+      "<h4 class=\"subsection-title\">Other agents: look for standing instructions</h4>" +
       '<p><span class="tag no">Not checked</span> Every app is different, so these steps are general.</p>' +
       '<ol class="steps">' +
       "<li>Tap <strong>Copy my rules</strong> above.</li>" +
@@ -224,7 +224,7 @@
   var SETTINGS = {
     muse: function () {
       var a = state.answers;
-      var h = "<h3>Muse</h3><ul class=\"check\">";
+      var h = "<h4 class=\"subsection-title\">Muse</h4><ul class=\"check\">";
       h += item("Go to <strong>Settings &gt; Permissions &gt; Connectors</strong> and pick <strong>Always ask</strong>. Then Muse asks before any action with your connected apps. (\"Ask for some actions\" only asks before write actions and important reads.)", true, SRC.musePerm);
       h += item("In the same place, set <strong>Web access defaults</strong> to <strong>Always ask</strong>. Then Muse asks before it visits any website.", true, SRC.musePerm);
       h += item("When Muse asks for approval, tap <strong>Allow once</strong>. Be careful with <strong>Always allow</strong> and <strong>Allow for this site</strong>: after those, Muse can do that kind of action again without asking.", true, SRC.musePerm);
@@ -241,7 +241,7 @@
       return h;
     },
     grok: function () {
-      var h = "<h3>Grok Bot</h3>";
+      var h = "<h4 class=\"subsection-title\">Grok Bot</h4>";
       h += '<p class="small">The docs say some settings depend on your account and rollout, so you may not see all of these.</p><ul class="check">';
       h += item("Read each approval card. Use <strong>Allow once</strong> while you learn. Tap <strong>Deny</strong> if it's not what you asked for. <strong>Always allow</strong> saves a rule, so use it only for actions you fully trust.", true, SRC.gbOnb);
       h += item("Add your own <strong>Ask first</strong> rules in <strong>Settings &gt; General &gt; Auto-review</strong>. Keep them narrow, like \"ask first before sending any external email.\" These rules are saved per computer, so set them again on a second computer.", true, SRC.gbSec);
@@ -255,7 +255,7 @@
       return h;
     },
     other: function () {
-      var h = "<h3>Any agent</h3><ul class=\"check\">";
+      var h = "<h4 class=\"subsection-title\">Any agent</h4><ul class=\"check\">";
       h += item("Find the approval or permission setting. Pick the strictest one (often called \"always ask\").", false, null);
       h += item("When it asks to do something, approve just this once. Avoid \"always allow\" for sending, buying, or sharing.", false, null);
       h += item("Only connect the apps you need. Start with read-only access if the app offers it.", false, null);
@@ -272,7 +272,7 @@
   function show(name) {
     screens.forEach(function (s) { document.getElementById("screen-" + s).classList.toggle("hidden", s !== name); });
     window.scrollTo(0, 0);
-    var h = document.querySelector("#screen-" + name + " h1, #screen-" + name + " legend");
+    var h = document.querySelector("#screen-" + name + " h1, #screen-" + name + " .screen-title, #screen-" + name + " legend");
     if (h && name !== "start") { if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
   }
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }

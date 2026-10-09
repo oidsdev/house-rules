@@ -36,6 +36,12 @@ footer.bottom p { margin: .4rem 0; }
 h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 1rem; letter-spacing: -0.02em; }
 h2 { font-size: 1.4rem; line-height: 1.25; margin: 2.25rem 0 .75rem; }
 h3 { font-size: 1.1rem; margin: 1.5rem 0 .5rem; }
+/* Quiz screens after the start step use one H1 for the page. These classes keep the old sizes. */
+h2.screen-title { font-size: 2rem; line-height: 1.15; margin: 0 0 1rem; letter-spacing: -0.02em; }
+h3.section-title { font-size: 1.4rem; line-height: 1.25; margin: 2.25rem 0 .75rem; }
+h4.subsection-title { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 .5rem; }
+/* Standalone label that was a bold paragraph; keep paragraph size so the layout does not shift. */
+h3.run-in { font-size: 1em; font-weight: 700; line-height: inherit; margin: 1em 0; letter-spacing: normal; }
 p, li { max-width: 36rem; }
 .lead { font-size: 1.15rem; }
 .small { font-size: .85rem; }
@@ -123,7 +129,7 @@ ul.check li::before { content: "\2610"; position: absolute; left: 0; top: -0.05r
 .guide-list a:hover { text-decoration: underline; }
 
 .hidden { display: none !important; }
-@media (min-width: 700px) { h1 { font-size: 2.4rem; } }
+@media (min-width: 700px) { h1, h2.screen-title { font-size: 2.4rem; } }
 @media print {
   header.top nav, .btn, .tabs, footer.bottom { display: none !important; }
   pre.rules { max-height: none; border: 1px solid #000; background: #fff; }

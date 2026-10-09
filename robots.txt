@@ -29,3 +29,5 @@ Allow: /
 
 User-agent: ClaudeBot
 Allow: /
+
+Sitemap: https://agent-house-rules.pages.dev/sitemap.xml
