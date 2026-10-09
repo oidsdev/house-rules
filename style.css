@@ -34,6 +34,7 @@ footer.bottom { border-top: 1px solid var(--ink); padding-top: 1.25rem; padding-
 footer.bottom p { margin: .4rem 0; }
 
 h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 1rem; letter-spacing: -0.02em; }
+#q-heading { font-size: 1.6rem; font-weight: 800; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -0.01em; }
 h2 { font-size: 1.4rem; line-height: 1.25; margin: 2.25rem 0 .75rem; }
 h3 { font-size: 1.1rem; margin: 1.5rem 0 .5rem; }
 p, li { max-width: 36rem; }

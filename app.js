@@ -281,7 +281,8 @@
     var q = QUESTIONS[i];
     document.getElementById("q-count").textContent = "Question " + (i + 1) + " of " + QUESTIONS.length;
     document.getElementById("q-bar").style.width = Math.round(((i + 2) / 12) * 100) + "%";
-    var html = "<legend>" + esc(q.title) + "</legend>";
+    document.getElementById("q-heading").textContent = q.title;
+    var html = "";
     if (q.hint) html += '<p class="hint">' + esc(q.hint) + "</p>";
     q.options.forEach(function (o, n) {
       var checked = state.answers[q.id] === o.v ? " checked" : "";
