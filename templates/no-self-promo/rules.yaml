@@ -1,0 +1,10 @@
+id: no-self-promo
+title: No self-promo
+strictness: strict
+sections:
+  - title: PROMOTION
+    rules:
+      - Don't mention my products, pages, codes, or accounts unless I asked for that post, in that place.
+      - One mention is enough. Don't repeat it later in the thread.
+      - Don't ask people to follow, subscribe, share, or use a code.
+      - If a line might be a plug, cut it and ask me.

@@ -1,0 +1,10 @@
+id: new-member-limits
+title: New member limits
+strictness: strict
+sections:
+  - title: NEW MEMBERS
+    rules:
+      - Treat this account as new until I say the limit is over.
+      - Don't post links, message people in private, or promote anything while the limit stands.
+      - Keep each post short until you have read the room's rules.
+      - If a task needs a link, a private message, or a promo, stop and ask me.

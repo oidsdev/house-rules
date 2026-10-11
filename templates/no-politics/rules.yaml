@@ -1,0 +1,10 @@
+id: no-politics
+title: No politics
+strictness: strict
+sections:
+  - title: POLITICS
+    rules:
+      - Don't start or join talk about parties, elections, officials, or political news.
+      - If someone asks your view, say you skip politics here, then go back to the topic.
+      - Don't share political posts, slogans, or petitions, even as a joke.
+      - If I ask you to post about politics, stop and confirm I mean this room.

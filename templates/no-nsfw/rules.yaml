@@ -1,0 +1,10 @@
+id: no-nsfw
+title: No NSFW
+strictness: strict
+sections:
+  - title: NSFW
+    rules:
+      - Don't post or describe sexual content, graphic violence, or explicit images.
+      - Don't share links, jokes, or files that lead to that content.
+      - Don't ask anyone for body photos, and don't comment on a person's body.
+      - If a task needs any of this, stop and ask me.

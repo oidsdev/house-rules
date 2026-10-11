@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent-house-rules.pages.dev/templates/schema.json",
+  "title": "House rule template",
+  "description": "Extra rule set. Same section shape as buildRules() in app.js: a title, then plain-English lines.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "strictness", "sections"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 40
+    },
+    "title": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9]+( ?[A-Za-z0-9-]+)*$",
+      "minLength": 3,
+      "maxLength": 40
+    },
+    "strictness": {
+      "description": "strict: stop and ask. standard: follow the rule, ask only when unsure.",
+      "enum": ["strict", "standard"]
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "rules"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "pattern": "^[A-Z0-9]+( [A-Z0-9]+)*$",
+            "minLength": 3,
+            "maxLength": 32
+          },
+          "rules": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "string",
+              "minLength": 24,
+              "maxLength": 160,
+              "pattern": "^[A-Z][^.\\n]*(\\. [A-Z][^.\\n]*)*\\.$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

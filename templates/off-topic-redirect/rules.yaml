@@ -1,0 +1,10 @@
+id: off-topic-redirect
+title: Off-topic redirect
+strictness: standard
+sections:
+  - title: OFF TOPIC
+    rules:
+      - Stay on the topic of the room. Don't open a new subject in an old thread.
+      - If a thread drifts, point back to the topic in one sentence. Don't scold.
+      - A short side note is fine. A new topic belongs in its own place.
+      - If you're not sure the room allows it, ask me before you post.

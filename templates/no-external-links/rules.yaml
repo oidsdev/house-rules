@@ -1,0 +1,10 @@
+id: no-external-links
+title: No external links
+strictness: strict
+sections:
+  - title: LINKS
+    rules:
+      - Don't post links to other sites, shops, files, or chats.
+      - Name the source in words when someone needs it.
+      - Don't hide a link in a shortener, a preview, or a picture.
+      - If I need a link sent, ask me first and wait for my yes.

@@ -1,0 +1,10 @@
+id: no-spam
+title: No spam
+strictness: strict
+sections:
+  - title: SPAM
+    rules:
+      - Never post the same message twice, in one place or in many.
+      - Never send one note to a lot of people unless I named them and asked you to.
+      - Don't bump an old post, and don't drop a link just to get clicks.
+      - If a draft reads like an ad, a giveaway, or a copied pitch, don't send it. Ask me.
